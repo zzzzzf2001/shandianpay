@@ -1,0 +1,307 @@
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:42:44,225 ERROR [main][SpringApplication.java:858] - Application run failed
+java.lang.IllegalStateException: java.io.FileNotFoundException: D:\Code\JAVACode\shanjupay\class:log4j2.xml (系统找不到指定的文件。)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:305)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:266)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:229)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:202)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:191)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:105)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:71)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.zhang.merchant.MerchantApplicationBootStrap.main(MerchantApplicationBootStrap.java:17)
+Caused by: java.io.FileNotFoundException: D:\Code\JAVACode\shanjupay\class:log4j2.xml (系统找不到指定的文件。)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1165)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:297)
+	... 26 more
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:14,722 INFO [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:14,728 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant‐application, dubbo.application.qos-enable=false, dubbo.application.qos-port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://${nacos.server.addr}, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,039 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f611c22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,106 INFO [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,758 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant‐application, dubbo.application.qos-enable=false, dubbo.application.qos-port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://${nacos.server.addr}, dubbo.scan.base-packages=com.shanjupay}
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,811 ERROR [main][NacosPropertySourceBuilder.java:106] - get data from Nacos error,dataId:spring‐boot‐http.yaml, 
+ErrCode:-400, ErrMsg:dataId invalid
+	at com.alibaba.nacos.client.config.utils.ParamUtils.checkKeyParam(ParamUtils.java:64)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:154)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:122)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadExtConfiguration(NacosPropertySourceLocator.java:129)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:87)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.zhang.merchant.MerchantApplicationBootStrap.main(MerchantApplicationBootStrap.java:17)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,821 ERROR [main][NacosPropertySourceBuilder.java:106] - get data from Nacos error,dataId:merchant‐application.properties, 
+ErrCode:-400, ErrMsg:dataId invalid
+	at com.alibaba.nacos.client.config.utils.ParamUtils.checkKeyParam(ParamUtils.java:64)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:154)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:122)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:155)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:88)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.zhang.merchant.MerchantApplicationBootStrap.main(MerchantApplicationBootStrap.java:17)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,822 INFO [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='merchant‐application.properties'}, NacosPropertySource {name='spring‐boot‐http.yaml'}]}
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:15,843 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,385 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,387 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,396 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,397 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,398 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,398 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,399 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,399 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,400 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,400 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,589 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,634 INFO [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.26.1
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,635 INFO [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.26.1
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,637 WARN [main][ServiceAnnotationBeanPostProcessor.java:169] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.shanjupay], dubbo version: 2.7.3, current host: 192.168.26.1
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,639 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,639 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,761 INFO [main][GenericScope.java:294] - BeanFactory id=37ae63fc-cf60-3d71-80f4-413a068e8c7f
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,875 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$f7086829] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,956 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,969 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,982 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,987 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,989 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,990 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$694804a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:16,995 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$fbf20cfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,001 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,004 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,008 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$bc3746b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,013 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$b0024f7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,024 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$3af4e2a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,030 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,032 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,697 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,702 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,717 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:17,720 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$8865df83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,382 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,384 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,390 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,393 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,498 WARN [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:3) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,499 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,510 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,526 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,530 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$c088ab59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,539 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,544 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$fa5ea759] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,549 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$ceda98b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,555 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$81275acf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,561 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$3c3e40be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,566 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,570 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,578 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$6309b7ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,592 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,596 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$b0e63645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,607 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,611 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,640 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,647 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,654 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$8d7ae4b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,662 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,665 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,670 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,675 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,676 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,687 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,693 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,696 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,698 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:18,705 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f611c22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,034 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 57010 (http)
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,051 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-57010"]
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,059 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,060 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,082 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\1575443749\JDK11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\VMware\bin\;D:\1575443749\python\Scripts\;D:\1575443749\python;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\app\15754\product\11.2.0\dbhome_1\bin;D:\15754\Videos\WINDOWS.X64_193000_db_home\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\1575443749\MySQL\bin;D:\15754\Videos\apache-tomcat-9.0.62-windows-x64\apache-tomcat-9.0.62\bin;D:\1575443749\java\jdk1.8\bin;D:\1575443749\java\jdk1.8\jre\bin;C:\Program Files\dotnet\;D:\1575443749\nodejs\;D:\1575443749\Git\cmd;D:\1575443749\maven\apache-maven-3.5.4\bin;D:\erlang\erl9.3\bin;D:\rabbitmq\rabbitmq_server-3.7.14\sbin;;C:\Program Files (x86)\Tencent\微信web开发者工具\dll;D:\微信开发\微信web开发者工具\dll;D:\wechatDevelpment\微信web开发者工具\dll;D:\scoop\shims;D:\scoop\\shims;D:\Users\15754\anaconda3;D:\Users\15754\anaconda3\Library\mingw-w64\bin;D:\Users\15754\anaconda3\Library\usr\bin;D:\Users\15754\anaconda3\Library\bin;D:\Users\15754\anaconda3\Scripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\15754\AppData\Local\Microsoft\WindowsApps;D:\1575443749\Microsoft VS Code\bin;C:\Users\15754\AppData\Roaming\npm;D:\1575443749\MySQL\bin;.]
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,199 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:19,200 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3347 ms
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,060 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,061 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,064 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,064 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,203 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,406 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,415 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,420 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,429 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,440 WARN [main][AbstractApplicationContext.java:557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'dubbo-org.apache.dubbo.spring.boot.autoconfigure.DubboConfigurationProperties': Could not bind properties to 'DubboConfigurationProperties' : prefix=dubbo, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'dubbo.application' to org.apache.dubbo.config.ApplicationConfig
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,440 INFO [main][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,444 INFO [main][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,445 INFO [main][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,446 INFO [main][DirectJDKLog.java:173] - Stopping service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,460 INFO [main][ConditionEvaluationReportLoggingListener.java:142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,461 INFO [main][AwaitingNonWebApplicationListener.java:155] -  [Dubbo] Current Spring Boot Application is about to shutdown...
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,464 ERROR [main][LoggingFailureAnalysisReporter.java:42] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'dubbo.application' to org.apache.dubbo.config.ApplicationConfig:
+
+    Property: dubbo.application.name
+    Value: merchant‐application
+    Origin: "dubbo.application.name" from property source "defaultProperties"
+    Reason: Invalid name="merchant‐application" contains illegal character, only digit, letter, '-', '_' or '.' is legal.
+
+Action:
+
+Update your application's configuration
+
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,467 INFO [DubboShutdownHook][DubboShutdownHook.java:58] -  [DUBBO] Run shutdown hook now., dubbo version: 2.7.3, current host: 192.168.26.1
+[${project.name}][${env:SERVER_PORT}] 2023-06-03
+            18:43:20,468 INFO [DubboShutdownHook][AbstractRegistryFactory.java:68] -  [DUBBO] Close all registries [], dubbo version: 2.7.3, current host: 192.168.26.1
