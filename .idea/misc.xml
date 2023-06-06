@@ -6,10 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/generator/pom.xml" />
+        <option value="$PROJECT_DIR$/sailing/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/sailing/pom.xml" />
         <option value="$PROJECT_DIR$/shanju-merchant/shanju-merchant-api/pom.xml" />
       </set>
     </option>

@@ -15,11 +15,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="sailing" target="1.8" />
       <module name="shanju-merchant-api" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sailing" options="-parameters" />
       <module name="shanju-merchant" options="-parameters" />
       <module name="shanju-merchant-api" options="-parameters" />
       <module name="shanjupay" options="-parameters" />
