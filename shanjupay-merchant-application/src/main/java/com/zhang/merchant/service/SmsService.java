@@ -7,7 +7,7 @@ package com.zhang.merchant.service;
  **/
 
 
-public interface smsService {
+public interface SmsService {
     /*
      * @param phone
      * @return  验证码对应的key
@@ -16,4 +16,5 @@ public interface smsService {
      * @Date 2023/6/6
      */
     String sendMsg(String phone);
+    void  CheckVerify(String code,String key);
 }

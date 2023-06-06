@@ -1,9 +1,8 @@
 package com.zhang.merchant.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.zhang.merchant.service.smsService;
+import com.zhang.merchant.service.SmsService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -23,10 +22,10 @@ import java.util.Map;
 
 @Service
 @Slf4j
-public class smsServiceImpl implements smsService {
+public class SmsServiceImpl implements SmsService {
 
     @Value("${sms.url}")
-    String url;
+    String prefix_url;
     @Value("${sms.effectiveTime}")
     String effectiveTime;
 
@@ -35,7 +34,7 @@ public class smsServiceImpl implements smsService {
 
     @Override
     public String sendMsg(String phone) {
-        String sms_url=url+"/generate?name=sms&effectiveTime="+effectiveTime;
+        String sms_url=prefix_url+"/generate?name=sms&effectiveTime="+effectiveTime;
         //请求体定义
         Map<String,Object> body=new HashMap<>();
         body.put("mobile",phone);
@@ -66,10 +65,32 @@ public class smsServiceImpl implements smsService {
 
         Map result = (Map)bodyMap.get("result");
 
-        String key =(String) result.get("key");
-        log.info("得到验证码对应的key:{}",key);
+        String code =(String) result.get("key");
+        log.info("得到验证码对应的key:{}",code);
+        return null;
+    }
 
+    @Override
+    public void CheckVerify(String code, String key) {
+        //获取验证码的URL
+        String URL=prefix_url+"/verify?name=sms&verificationCode="+code+"&verificationKey="+key;
 
-        return key;
+        ResponseEntity<Map>     exchange =null;
+        Map<String,Object> body=null;
+
+        try{
+
+            exchange = restTemplate.exchange(URL, HttpMethod.POST, HttpEntity.EMPTY, Map.class);
+                 body = exchange.getBody();
+        }
+        catch(Exception e){
+                e.printStackTrace();
+                throw new RuntimeException("校验失败");
+        }
+        log.info("请求验证码服务，得到相应:{}"+ JSON.toJSONString(exchange));
+
+        if(body==null||body.get("result")==null||!(Boolean)body.get("result")){
+            throw new RuntimeException("校验失败");
+        }
     }
 }

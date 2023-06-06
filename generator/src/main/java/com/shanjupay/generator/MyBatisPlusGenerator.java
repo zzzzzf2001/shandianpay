@@ -29,6 +29,8 @@ public class MyBatisPlusGenerator {
      * 读取控制台内容
      * </p>
      */
+    public  final static Boolean IS_DTO=true;
+
     public static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder help = new StringBuilder();
@@ -143,6 +145,11 @@ public class MyBatisPlusGenerator {
         autoGenerator.setStrategy(strategyConfig);
         autoGenerator.setTemplateEngine(new FreemarkerTemplateEngine());
         System.out.println("===================== MyBatis Plus Generator ==================");
+        if(IS_DTO){
+            globalConfig.setSwagger2(true);
+            globalConfig.setEntityName("%sDTO");
+            packageConfig.setEntity("dto");
+        }
 
         autoGenerator.execute();
 
