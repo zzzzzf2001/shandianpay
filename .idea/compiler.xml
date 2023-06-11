@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shanjupay-merchant-api" />
+        <module name="shanjupay-transaction-api" />
+        <module name="shanjupay-common" />
         <module name="generator" />
         <module name="shanjupay-merchant-application" />
-        <module name="shanjupay-common" />
         <module name="shanjupay-merchant-servive" />
+        <module name="shanjupay-transaction-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +31,9 @@
       <module name="shanjupay-merchant-api" options="-parameters" />
       <module name="shanjupay-merchant-application" options="-parameters" />
       <module name="shanjupay-merchant-servive" options="-parameters" />
+      <module name="shanjupay-transaction" options="-parameters" />
+      <module name="shanjupay-transaction-api" options="-parameters -bootclasspath $PROJECT_DIR$/../../../1575443749/JDK11/lib/rt.jar;$PROJECT_DIR$/../../../1575443749/JDK11/lib/jce.jar" />
+      <module name="shanjupay-transaction-service" options="-parameters" />
     </option>
   </component>
 </project>
