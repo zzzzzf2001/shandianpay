@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0199b27-81c0-476a-bb39-7e606acb78e5" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/com/shanjupay/generator/MyBatisPlusGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/com/shanjupay/generator/MyBatisPlusGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/AppService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/convert/AppCovert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/AppServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/util/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/util/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/common/intercept/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/convert/MerchantDetailCovert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/convert/MerchantRegisterConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/utils/AliOssUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/vo/MerchantDetailVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/MerchantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/MerchantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/dto/MerchantDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/dto/MerchantDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/dto/MerchantDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/convert/MerchantCovert.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/convert/MerchantCovert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-common/shanjupay-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-common/shanjupay-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/smsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/smsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/resources/bootstrap.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,44 +68,49 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Code/JAVACode/shanjupay/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
-    "spring.configuration.checksum": "02a07cc24d7837a09430c1722aca24f7",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVACode/shanjupay/shanjupay-common/src/main/java/com/shanjupay/common/util&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;02a07cc24d7837a09430c1722aca24f7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.zhang.merchant.service.impl" />
       <recent name="com.zhang.merchant.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-common\src\main\java\com\shanjupay\common\util" />
+      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-merchant-application\src\test\java\com\zhang\merchant" />
+      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-common\src\main\java" />
       <recent name="D:\Code\JAVACode\shanjupay\shanju-merchant\shanjupay-merchant-servive\src\main\java\com\zhang\merchant" />
       <recent name="D:\Code\JAVACode\shanjupay" />
-      <recent name="D:\Code\JAVACode\shanjupay\shanju-merchant\shanjupay-merchant-servive\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shanjupay.common.util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MerchantApplicationBootStrap (1)">
+  <component name="RunManager" selected="应用程序.SecurityUtil">
     <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shanjupay.generator.MyBatisPlusGenerator" />
       <module name="generator" />
@@ -111,23 +134,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTemplateTest.getHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shanjupay-merchant-application" />
+    <configuration name="SecurityUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shanjupay.common.util.SecurityUtil" />
+      <module name="shanjupay-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhang.merchant.*" />
+          <option name="PATTERN" value="com.shanjupay.common.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zhang.merchant" />
-      <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.RestTemplateTest" />
-      <option name="METHOD_NAME" value="getHtml" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTemplateTest.gethtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TokenTemp.createTestToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shanjupay-merchant-application" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +156,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.zhang.merchant" />
-      <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.RestTemplateTest" />
-      <option name="METHOD_NAME" value="gethtml" />
+      <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.TokenTemp" />
+      <option name="METHOD_NAME" value="createTestToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,13 +199,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TokenTemp.createTestToken" />
+      <item itemvalue="JUnit.test.gethtml" />
+      <item itemvalue="Spring Boot.MerchantServiceApplication" />
+      <item itemvalue="Spring Boot.MerchantApplicationBootStrap (1)" />
+      <item itemvalue="应用程序.SecurityUtil" />
+      <item itemvalue="应用程序.MyBatisPlusGenerator" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MerchantApplicationBootStrap (1)" />
+        <item itemvalue="应用程序.SecurityUtil" />
+        <item itemvalue="JUnit.TokenTemp.createTestToken" />
         <item itemvalue="应用程序.MyBatisPlusGenerator" />
         <item itemvalue="JUnit.test.gethtml" />
-        <item itemvalue="JUnit.RestTemplateTest.gethtml" />
-        <item itemvalue="JUnit.RestTemplateTest.getHtml" />
       </list>
     </recent_temporary>
   </component>
@@ -205,11 +233,30 @@
       <workItem from="1685881309215" duration="1653000" />
       <workItem from="1685940037185" duration="27755000" />
       <workItem from="1686028373188" duration="17319000" />
+      <workItem from="1686052449234" duration="5231000" />
+      <workItem from="1686132427697" duration="6555000" />
+      <workItem from="1686149283079" duration="453000" />
+      <workItem from="1686186571398" duration="7593000" />
+      <workItem from="1686228533267" duration="7693000" />
+      <workItem from="1686295749136" duration="48000" />
+      <workItem from="1686300020585" duration="5223000" />
+      <workItem from="1686463779704" duration="8263000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -220,19 +267,57 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java</url>
-          <line>78</line>
+          <line>80</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="6" />
+          <line>95</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/common/intercept/GlobalExceptionHandler.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/AppServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java</url>
+          <line>79</line>
+          <properties class="com.zhang.merchant.controller.MerchantController" method="saveMerchant">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/common/intercept/GlobalExceptionHandler.java</url>
+          <line>29</line>
+          <properties class="com.zhang.merchant.common.intercept.GlobalExceptionHandler" method="processException">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

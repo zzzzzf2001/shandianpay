@@ -20,7 +20,7 @@ public class App implements Serializable {
     private String appId;
 
     /**
-     * 商店名称
+     * 应用名称
      */
     @TableField("APP_NAME")
     private String appName;

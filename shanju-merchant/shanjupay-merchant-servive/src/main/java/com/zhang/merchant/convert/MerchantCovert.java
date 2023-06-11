@@ -12,7 +12,7 @@ import org.mapstruct.factory.Mappers;
  **/
 
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface MerchantCovert {
 
     MerchantCovert INSTANCE = Mappers.getMapper(MerchantCovert.class);
@@ -20,7 +20,6 @@ public interface MerchantCovert {
     MerchantDTO entity2dto(Merchant entity);
 
     Merchant dto2entity(MerchantDTO dto);
-
 
 
 }

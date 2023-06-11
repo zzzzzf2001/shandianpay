@@ -1,5 +1,6 @@
 package com.zhang.merchant.api;
 
+import com.shanjupay.common.domain.BusinessException;
 import com.zhang.merchant.api.dto.MerchantDTO;
 
 /**
@@ -9,7 +10,7 @@ import com.zhang.merchant.api.dto.MerchantDTO;
  **/
 
 
-public interface MerchantService {
+public interface MerchantService  {
 
     //根据 id查询商户
     public MerchantDTO queryMerchantById(Long id);
@@ -22,6 +23,18 @@ public interface MerchantService {
      * @author 15754
      * @Date 2023/6/6
      */
-     MerchantDTO createMerchant(MerchantDTO merchantDTO);
+     MerchantDTO createMerchant(MerchantDTO merchantDTO) throws BusinessException;
+
+
+
+
+    void applyMerchant(Long merchantId, MerchantDTO merchantDTO) throws BusinessException;
+
+
+
+
+
+
 
 }
+

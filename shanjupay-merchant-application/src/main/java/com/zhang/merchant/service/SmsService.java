@@ -1,5 +1,7 @@
 package com.zhang.merchant.service;
 
+import com.shanjupay.common.domain.BusinessException;
+
 /**
  * @author : 15754
  * @version 1.0.0
@@ -15,6 +17,6 @@ public interface SmsService {
      * @author 15754
      * @Date 2023/6/6
      */
-    String sendMsg(String phone);
-    void  CheckVerify(String code,String key);
+    String sendMsg(String phone) throws BusinessException;
+    void  CheckVerify(String code,String key)  throws BusinessException;
 }

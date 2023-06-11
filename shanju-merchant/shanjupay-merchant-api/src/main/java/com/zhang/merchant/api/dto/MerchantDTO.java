@@ -1,9 +1,6 @@
 package com.zhang.merchant.api.dto;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableField;
+;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -11,6 +8,7 @@ import lombok.Data;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 @Data
+
 @ApiModel(value="MerchantDTO", description="")
 public class MerchantDTO implements Serializable {
 
@@ -54,6 +52,7 @@ public class MerchantDTO implements Serializable {
 
     @ApiModelProperty(value = "租户ID,关联统一用户")
     private Long tenantId;
+
 
 
 }

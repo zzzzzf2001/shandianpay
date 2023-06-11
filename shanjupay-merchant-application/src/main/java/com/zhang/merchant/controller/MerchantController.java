@@ -1,12 +1,17 @@
 package com.zhang.merchant.controller;
 
+import com.shanjupay.common.util.SecurityUtil;
 import com.zhang.merchant.api.MerchantService;
 
 import com.zhang.merchant.api.dto.MerchantDTO;
+import com.zhang.merchant.convert.MerchantDetailCovert;
+import com.zhang.merchant.convert.MerchantRegisterConvert;
 import com.zhang.merchant.service.SmsService;
+import com.zhang.merchant.vo.MerchantDetailVO;
 import com.zhang.merchant.vo.MerchantRegisterVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 
 import lombok.extern.slf4j.Slf4j;
@@ -55,11 +60,35 @@ public class MerchantController {
         //校验验证码
         smsService.CheckVerify(merchantRegisterVO.getVerifiyCode(),merchantRegisterVO.getVerifiykey());
 
-        MerchantDTO merchantDTO=new MerchantDTO();
-        BeanUtils.copyProperties(merchantRegisterVO,merchantDTO);
+        MerchantDTO merchantDTO = MerchantRegisterConvert.INSTANCE.MRVO2DTO(merchantRegisterVO);
+
         //调用dubbo服务接口
         merchantService.createMerchant(merchantDTO);
+
         return merchantRegisterVO;
     }
+
+
+
+    @ApiOperation("资质申请")
+    @PostMapping("/my/merchants/save")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "merchantInfo", value = "商户认证资料", required = true,
+                    dataType = "MerchantDetailVO", paramType = "body")
+    })
+
+    public void  saveMerchant(@RequestBody MerchantDetailVO merchantDetailVO){
+
+        Long merchantId = SecurityUtil.getMerchantId();
+
+        MerchantDTO merchantDTO = MerchantDetailCovert.INSTANCE.MerchantDVO2DTO(merchantDetailVO);
+
+        merchantService.applyMerchant(merchantId,merchantDTO);
+
+
+
+    }
+
+
 
 }

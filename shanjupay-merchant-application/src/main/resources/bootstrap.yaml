@@ -42,20 +42,29 @@ spring:
             max-request-size: 30MB
 
 dubbo:
+    metadata-report:
+        address: nacos://192.168.26.128:1111
     scan:
         # dubbo 服务扫描基准包
-        base-packages: com.zhang
+        base-packages: com.zhang.merchant
     protocol:
         # dubbo 协议
         name: dubbo
         port: 20891
+        id: dubbo
     registry:
         address: nacos://192.168.26.128:1111
     application:
-        qos:
-            port: 22310 # dubbo qos端口配置  命令行注入
+        # dubbo qos端口配置  命令行注入
+        qos-port: 22310
+
     consumer:
         check: false
         timeout: 3000
         retries: -1
-
+shandian:
+    alioss:
+        endpoint: ${shandian.alioss.dev.endpoint}
+        access-key-id: ${shandian.alioss.dev.access-key-id}
+        access-key-secret: ${shandian.alioss.dev.access-key-secret}
+        bucket-name: ${shandian.alioss.dev.bucket-name}
