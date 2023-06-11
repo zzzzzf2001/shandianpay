@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0199b27-81c0-476a-bb39-7e606acb78e5" name="更改" comment="" />
+    <list default="true" id="b0199b27-81c0-476a-bb39-7e606acb78e5" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/PlatformParamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +40,6 @@
   <component name="ProjectId" id="2QgrpLa64O3TZatoWDepZE3UEh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -221,7 +223,7 @@
       <workItem from="1686228533267" duration="7693000" />
       <workItem from="1686295749136" duration="48000" />
       <workItem from="1686300020585" duration="5223000" />
-      <workItem from="1686463779704" duration="10004000" />
+      <workItem from="1686463779704" duration="11117000" />
     </task>
     <servers />
   </component>
