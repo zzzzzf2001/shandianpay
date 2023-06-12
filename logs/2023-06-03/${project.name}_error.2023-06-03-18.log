@@ -1,22 +1,152 @@
-[${project.name}][${env:SERVER_PORT}] 2023-06-05
-            15:07:09,886 ERROR [main][TomcatStarter.java:62] - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthIndicatorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthIndicatorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthIndicatorRegistry]: Factory method 'healthIndicatorRegistry' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-[${project.name}][${env:SERVER_PORT}] 2023-06-05
-            15:07:09,937 ERROR [main][LoggingFailureAnalysisReporter.java:42] - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
+[${project.name}][${env:SERVER_PORT}] 2023-06-12 22:02:31,001 ERROR [DubboServerHandler-192.168.26.1:20893-thread-2][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.26.1. service: com.shanjupay.transaction.api.PayChannelService, method: savePayChannelParam, exception: java.lang.NullPointerException: null, dubbo version: 2.7.3, current host: 192.168.26.1
+java.lang.NullPointerException
+	at com.shanjupay.transaction.service.PayChannelServiceImpl.savePayChannelParam(PayChannelServiceImpl.java:92)
+	at org.apache.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:56)
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:152)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:102)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:193)
+	at org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:51)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[${project.name}][${env:SERVER_PORT}] 2023-06-12 22:04:34,224 ERROR [com.alibaba.nacos.naming.client.listener][DubboMetadataServiceInvocationHandler.java:54] - Failed to invoke the method getExportedURLs in the service org.apache.dubbo.rpc.service.GenericService. Tried 1 times of the providers [192.168.26.1:20891] (1/1) from the registry localhost:9090 on the consumer 192.168.26.1 using the dubbo version 2.7.3. Last error is: Invoke remote method timeout. method: $invoke, provider: dubbo://192.168.26.1:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=transaction-service&bind.ip=192.168.26.1&bind.port=20891&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=true&group=merchantApplication&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=656&qos.enable=false&qos.port=22250&register=true&register.ip=192.168.26.1&release=2.7.3&remote.application=merchantApplication&retries=-1&revision=2.1.0.RELEASE&side=consumer&sticky=false&timeout=3000&timestamp=1686578482622&version=1.0.0, cause: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2023-06-12 22:04:31.194, end time: 2023-06-12 22:04:34.223, client elapsed: 3 ms, server elapsed: 3026 ms, timeout: 3000 ms, request: Request [id=5, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getExportedURLs, [Ljava.lang.String;@70d7d1cf, [Ljava.lang.Object;@682fae97], attachments={path=com.alibaba.cloud.dubbo.service.DubboMetadataService, interface=com.alibaba.cloud.dubbo.service.DubboMetadataService, version=1.0.0, generic=true, timeout=3000, group=merchantApplication}]], channel: /192.168.26.1:56025 -> /192.168.26.1:20891
+org.apache.dubbo.rpc.RpcException: Failed to invoke the method getExportedURLs in the service org.apache.dubbo.rpc.service.GenericService. Tried 1 times of the providers [192.168.26.1:20891] (1/1) from the registry localhost:9090 on the consumer 192.168.26.1 using the dubbo version 2.7.3. Last error is: Invoke remote method timeout. method: $invoke, provider: dubbo://192.168.26.1:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=transaction-service&bind.ip=192.168.26.1&bind.port=20891&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=true&group=merchantApplication&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=656&qos.enable=false&qos.port=22250&register=true&register.ip=192.168.26.1&release=2.7.3&remote.application=merchantApplication&retries=-1&revision=2.1.0.RELEASE&side=consumer&sticky=false&timeout=3000&timestamp=1686578482622&version=1.0.0, cause: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2023-06-12 22:04:31.194, end time: 2023-06-12 22:04:34.223, client elapsed: 3 ms, server elapsed: 3026 ms, timeout: 3000 ms, request: Request [id=5, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getExportedURLs, [Ljava.lang.String;@70d7d1cf, [Ljava.lang.Object;@682fae97], attachments={path=com.alibaba.cloud.dubbo.service.DubboMetadataService, interface=com.alibaba.cloud.dubbo.service.DubboMetadataService, version=1.0.0, generic=true, timeout=3000, group=merchantApplication}]], channel: /192.168.26.1:56025 -> /192.168.26.1:20891
+	at org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:113)
+	at org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:248)
+	at org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:78)
+	at org.apache.dubbo.rpc.cluster.support.RegistryAwareClusterInvoker.doInvoke(RegistryAwareClusterInvoker.java:56)
+	at org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:248)
+	at org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:78)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy0.$invoke(proxy0.java)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceInvocationHandler.invoke(DubboMetadataServiceInvocationHandler.java:49)
+	at com.sun.proxy.$Proxy151.getExportedURLs(Unknown Source)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry.getExportedURLs(AbstractSpringCloudRegistry.java:328)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry.subscribeDubboServiceURL(AbstractSpringCloudRegistry.java:260)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:193)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:186)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.dispatchServiceInstancesChangedEvent(DubboServiceDiscoveryAutoConfiguration.java:161)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.access$200(DubboServiceDiscoveryAutoConfiguration.java:107)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration$NacosConfiguration.lambda$subscribeEventListener$1(DubboServiceDiscoveryAutoConfiguration.java:541)
+	at com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.ExecutionException: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2023-06-12 22:04:31.194, end time: 2023-06-12 22:04:34.223, client elapsed: 3 ms, server elapsed: 3026 ms, timeout: 3000 ms, request: Request [id=5, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getExportedURLs, [Ljava.lang.String;@70d7d1cf, [Ljava.lang.Object;@682fae97], attachments={path=com.alibaba.cloud.dubbo.service.DubboMetadataService, interface=com.alibaba.cloud.dubbo.service.DubboMetadataService, version=1.0.0, generic=true, timeout=3000, group=merchantApplication}]], channel: /192.168.26.1:56025 -> /192.168.26.1:20891
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:56)
+	at org.apache.dubbo.rpc.filter.GenericImplFilter.invoke(GenericImplFilter.java:119)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	at org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:82)
+	... 25 more
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2023-06-12 22:04:31.194, end time: 2023-06-12 22:04:34.223, client elapsed: 3 ms, server elapsed: 3026 ms, timeout: 3000 ms, request: Request [id=5, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getExportedURLs, [Ljava.lang.String;@70d7d1cf, [Ljava.lang.Object;@682fae97], attachments={path=com.alibaba.cloud.dubbo.service.DubboMetadataService, interface=com.alibaba.cloud.dubbo.service.DubboMetadataService, version=1.0.0, generic=true, timeout=3000, group=merchantApplication}]], channel: /192.168.26.1:56025 -> /192.168.26.1:20891
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture.doReceived(DefaultFuture.java:189)
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:153)
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture$TimeoutCheckTask.run(DefaultFuture.java:252)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	... 1 more
+[${project.name}][${env:SERVER_PORT}] 2023-06-12 22:04:46,435 ERROR [DubboServerHandler-192.168.26.1:20893-thread-3][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.26.1. service: com.shanjupay.transaction.api.PayChannelService, method: savePayChannelParam, exception: java.lang.NullPointerException: null, dubbo version: 2.7.3, current host: 192.168.26.1
+java.lang.NullPointerException
+	at com.shanjupay.transaction.service.PayChannelServiceImpl.savePayChannelParam(PayChannelServiceImpl.java:92)
+	at org.apache.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:56)
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:152)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:102)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:193)
+	at org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:51)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[${project.name}][${env:SERVER_PORT}] 2023-06-12 22:05:42,096 ERROR [DubboServerHandler-192.168.26.1:20893-thread-4][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.26.1. service: com.shanjupay.transaction.api.PayChannelService, method: savePayChannelParam, exception: java.lang.NullPointerException: null, dubbo version: 2.7.3, current host: 192.168.26.1
+java.lang.NullPointerException
+	at com.shanjupay.transaction.service.PayChannelServiceImpl.savePayChannelParam(PayChannelServiceImpl.java:92)
+	at org.apache.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:56)
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:152)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:102)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:193)
+	at org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:51)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

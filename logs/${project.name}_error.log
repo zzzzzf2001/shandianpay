@@ -1,51 +1,33 @@
-[${project.name}][${env:SERVER_PORT}] 2023-06-11 18:34:12,281 ERROR [main][NacosPropertySourceBuilder.java:109] - parse data from Nacos error,dataId:transaction-service.yaml,data:# 覆盖spring‐boot‐http.yaml的项目
-server:
-    servlet:
-        context‐path: /transaction
-# 覆盖spring‐boot‐starter‐druid.yaml的项目
-spring:
-    datasource:
-        druid:
-            url: jdbc:mysql://192.168.26.128:3380/shanjupay_transaction?useUnicode=true&characterEncoding=UTF‐8&serverTimezone=Asia/Shanghai&useSSL=false
-            username: root
-            password: 123456
-# 覆盖spring‐boot‐mybatis‐plus.yaml的项目
-mybatis‐plus:
-        typeAliasesPackage: com.shanjupay.transaction.entity
-            mapper‐locations: classpath:com/shanjupay/*/mapper/*.xml,
-mapping values are not allowed here
- in 'reader', line 15, column 29:
-                mapper‐locations: classpath:com/shanjupay/*/mapp ... 
-                                ^
-
-	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:870)
-	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:358)
-	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
-	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:558)
-	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
-	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:214)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
-	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
-	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
-	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
-	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
-	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
-	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:161)
-	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
-	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.createProperties(YamlPropertiesFactoryBean.java:135)
-	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.getObject(YamlPropertiesFactoryBean.java:115)
-	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:100)
-	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
-	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
-	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:155)
-	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:88)
-	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
-	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
-	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.shanjupay.transaction.TransactionBootstrap.main(TransactionBootstrap.java:11)
+[${project.name}][${env:SERVER_PORT}] 2023-06-12 22:07:30,141 ERROR [DubboServerHandler-192.168.26.1:20893-thread-10][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.106.226. service: com.shanjupay.transaction.api.PayChannelService, method: savePayChannelParam, exception: java.lang.NullPointerException: null, dubbo version: 2.7.3, current host: 192.168.26.1
+java.lang.NullPointerException
+	at com.shanjupay.transaction.service.PayChannelServiceImpl.savePayChannelParam(PayChannelServiceImpl.java:92)
+	at org.apache.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:56)
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:152)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:102)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:193)
+	at org.apache.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:51)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)

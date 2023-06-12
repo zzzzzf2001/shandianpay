@@ -19,7 +19,7 @@ spring:
       config:
         server-addr: ${nacos.server.addr} # 配置中心地址
         file-extension: yaml
-        namespace: 06bd56b7-5895-4daf-b15e-9d537f21b428
+        namespace: 06bd56b7-5895-4daf-b15e-9d537f21b428 #2ed00aaa-b760-4171-baa9-83d92e509a41 # 默认开发环境郑州区 命令行注入
         group: SHANJUPAY_GROUP # 聚合支付业务组
         ext-config:
           -
@@ -49,11 +49,9 @@ dubbo:
     qos:
       port: 22250 # dubbo qos端口配置  命令行注入
   consumer:
-    check: false
+    check: true
     timeout: 3000
     retries: -1
 
-logging:
-  config: classpath:log4j2.xml
 
 

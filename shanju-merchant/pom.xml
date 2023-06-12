@@ -13,7 +13,7 @@
     <artifactId>shanju-merchant</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>shanjupay-merchant-servive</module>
+        <module>shanjupay-merchant-service</module>
         <module>shanjupay-merchant-api</module>
     </modules>
 
