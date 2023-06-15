@@ -18,5 +18,5 @@ public interface SmsService {
      * @Date 2023/6/6
      */
     String sendMsg(String phone) throws BusinessException;
-    void  CheckVerify(String code,String key)  throws BusinessException;
+    void  checkVerifiyCode(String verifiyKey, String verifiyCode)  throws BusinessException;
 }

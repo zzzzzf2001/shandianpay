@@ -8,7 +8,7 @@ nacos:
 
 spring:
     application:
-        name: merchantApplication
+        name: merchant-application
     main:
         allow-bean-definition-overriding: true # Spring Boot 2.1 需要设定
     cloud:

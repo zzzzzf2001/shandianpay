@@ -8,6 +8,10 @@ nacos:
 spring:
   application:
     name: transaction-service
+  redis:
+    port: 6666
+    password: 123456
+    host: 192.168.26.128
   main:
     allow-bean-definition-overriding: true # Spring Boot 2.1 需要设定
   cloud:
@@ -32,7 +36,7 @@ spring:
             group: COMMON_GROUP # 通用配置组
           -
             refresh: true
-            data-id: spring-boot-mybatis-plus.yaml # spring boot mybatisplus配置
+            data-id: spring-boot-mybatis-plus.yaml # spring boot mybatis plus配置
             group: COMMON_GROUP # 通用配置组
 
 dubbo:

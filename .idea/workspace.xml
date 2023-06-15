@@ -5,83 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0199b27-81c0-476a-bb39-7e606acb78e5" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/convert/StaffConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/convert/StoreConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/util/RedisEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/common/util/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/${project.name}_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/${project.name}_info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/2023-06-03/${project.name}_error.2023-06-03-18.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-06-03/${project.name}_error.2023-06-03-18.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/2023-06-03/${project.name}_info.2023-06-03-18.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-06-03/${project.name}_info.2023-06-03-18.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/MerchantServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/MerchantServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/convert/AppCovert.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/convert/AppCovert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/convert/MerchantCovert.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/convert/MerchantCovert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/entity/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/entity/Merchant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/entity/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/entity/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/entity/StoreStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/entity/StoreStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/mapper/AppMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/mapper/AppMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/mapper/MerchantMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/mapper/MerchantMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/mapper/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/mapper/StaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/mapper/StoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/mapper/StoreMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/mapper/StoreStaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/mapper/StoreStaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/AppServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/AppServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-servive/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/MerchantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/MerchantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/dto/MerchantDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-api/src/main/java/com/zhang/merchant/api/dto/MerchantDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-common/src/main/java/com/shanjupay/common/domain/CommonErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/PlatformParamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/PlatformParamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/test/java/com/zhang/merchant/TokenTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/test/java/com/zhang/merchant/TokenTemp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/shanjupay-transaction-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-merchant-application/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/src/main/java/com/shanjupay/transaction/api/PayChannelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/src/main/java/com/shanjupay/transaction/api/PayChannelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/target/classes/com/shanjupay/transaction/api/dto/OrderResultDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/target/classes/com/shanjupay/transaction/api/dto/PayChannelDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/target/classes/com/shanjupay/transaction/api/dto/PayChannelParamDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/target/classes/com/shanjupay/transaction/api/dto/PayOrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-api/target/classes/com/shanjupay/transaction/api/dto/PlatformChannelDTO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/shanjupay-transaction-service.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/service/PayChannelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/service/PayChannelServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/TransactionBootstrap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/config/SwaggerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/convert/OrderResultConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/convert/PayChannelParamConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/convert/PayOrderConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/convert/PlatformChannelConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/AppPlatformChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PayChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PayChannelParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PayOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PaymentBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PlatformChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/PlatformPayChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/entity/RefundOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/AppPlatformChannelMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/AppPlatformChannelMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayChannelMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayChannelMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayChannelParamMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayChannelParamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayOrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PayOrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PaymentBillMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PaymentBillMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PlatformChannelMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PlatformChannelMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PlatformPayChannelMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/PlatformPayChannelMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/RefundOrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/com/shanjupay/transaction/mapper/RefundOrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,10 +56,12 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\1575443749\maven\myRepository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../../1575443749/maven/apache-maven-3.5.4" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\1575443749\maven\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2QgrpLa64O3TZatoWDepZE3UEh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -118,35 +69,35 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Code/JAVACode/shanjupay",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "spring.configuration.checksum": "0ec976bc69a5a40316a93e5dc5a2eb82",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVACode/shanjupay/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/convert&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f635ce4485c68acd891714539975f682&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -156,18 +107,26 @@
       <recent name="com.zhang.merchant.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVACode\shanjupay\shanju-merchant\shanjupay-merchant-service\src\main\java\com\zhang\merchant\convert" />
       <recent name="D:\Code\JAVACode\shanjupay" />
+      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-transaction\shanjupay-transaction-service\src\main\java\com\shanjupay\transaction\common\util" />
       <recent name="D:\Code\JAVACode\shanjupay\shanjupay-common\src\main\java\com\shanjupay\common\util" />
       <recent name="D:\Code\JAVACode\shanjupay\shanjupay-merchant-application\src\test\java\com\zhang\merchant" />
-      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-common\src\main\java" />
-      <recent name="D:\Code\JAVACode\shanjupay\shanju-merchant\shanjupay-merchant-servive\src\main\java\com\zhang\merchant" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVACode\shanjupay" />
+      <recent name="D:\Code\JAVACode\shanjupay\shanjupay-gateway" />
       <recent name="D:\Code\JAVACode\shanjupay\shanjupay-transaction" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shanjupay.common.util" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -176,7 +135,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TokenTemp.test">
+  <component name="RunManager" selected="Spring Boot.UserBootstrap">
     <configuration name="MerchantApplicationBootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.MerchantApplicationBootStrap" />
       <module name="shanjupay-merchant-application" />
@@ -203,18 +162,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TokenTemp.createTestToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shanjupay-merchant-application" />
+    <configuration name="UserBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shanjupay.user.UserBootstrap" />
+      <module name="shanjupay-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhang.merchant.*" />
+          <option name="PATTERN" value="com.shanjupay.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zhang.merchant" />
-      <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.TokenTemp" />
-      <option name="METHOD_NAME" value="createTestToken" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,6 +187,13 @@
       <option name="MAIN_CLASS_NAME" value="com.zhang.merchant.TokenTemp" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shanjupay-gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shanjupay.gateway.GatewayBootstrap" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -269,23 +232,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UAABootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shanjupay-uaa-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shanjupay.uaa.UAABootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="shanjupay-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.shanjupay.user.UserBootstrap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TokenTemp.test" />
-      <item itemvalue="JUnit.TokenTemp.createTestToken" />
+      <item itemvalue="Spring Boot.GatewayBootstrap" />
+      <item itemvalue="Spring Boot.UAABootstrap" />
+      <item itemvalue="Spring Boot.UserBootstrap" />
       <item itemvalue="Spring Boot.TransactionBootstrap" />
       <item itemvalue="Spring Boot.MerchantServiceApplication (1)" />
       <item itemvalue="Spring Boot.MerchantServiceApplication" />
       <item itemvalue="Spring Boot.MerchantApplicationBootStrap (1)" />
+      <item itemvalue="应用程序.UserBootstrap" />
       <item itemvalue="应用程序.MerchantApplicationBootStrap" />
       <item itemvalue="应用程序.SecurityUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MerchantApplicationBootStrap (1)" />
+        <item itemvalue="应用程序.UserBootstrap" />
         <item itemvalue="JUnit.TokenTemp.test" />
         <item itemvalue="应用程序.MerchantApplicationBootStrap" />
         <item itemvalue="应用程序.SecurityUtil" />
-        <item itemvalue="JUnit.TokenTemp.createTestToken" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +294,12 @@
       <workItem from="1686300020585" duration="5223000" />
       <workItem from="1686463779704" duration="20780000" />
       <workItem from="1686557661118" duration="111000" />
-      <workItem from="1686557784688" duration="16072000" />
+      <workItem from="1686557784688" duration="16137000" />
+      <workItem from="1686620159541" duration="8804000" />
+      <workItem from="1686641112264" duration="1234000" />
+      <workItem from="1686718924474" duration="11228000" />
+      <workItem from="1686733330600" duration="12715000" />
+      <workItem from="1686804093579" duration="524000" />
     </task>
     <servers />
   </component>
@@ -342,43 +327,28 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
           <line>93</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/MerchantServiceImpl.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/shanju-merchant/shanjupay-merchant-service/src/main/java/com/zhang/merchant/service/AppServiceImpl.java</url>
           <line>90</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/service/PayChannelServiceImpl.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/common/intercept/GlobalExceptionHandler.java</url>
           <line>33</line>
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/shanjupay-transaction/shanjupay-transaction-service/src/main/java/com/shanjupay/transaction/service/PayChannelServiceImpl.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="34" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/service/impl/SmsServiceImpl.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/controller/MerchantController.java</url>
@@ -388,15 +358,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/shanjupay-merchant-application/src/main/java/com/zhang/merchant/common/intercept/GlobalExceptionHandler.java</url>
-          <line>29</line>
-          <properties class="com.zhang.merchant.common.intercept.GlobalExceptionHandler" method="processException">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

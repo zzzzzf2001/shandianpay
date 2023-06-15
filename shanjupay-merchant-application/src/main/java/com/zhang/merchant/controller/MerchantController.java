@@ -17,6 +17,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -35,7 +36,7 @@ public class MerchantController {
 
     @Reference
     MerchantService merchantService;
-    @Resource
+    @Autowired
     SmsService smsService;
 
     @GetMapping("/merchant/{id}")
@@ -47,18 +48,17 @@ public class MerchantController {
 
     @GetMapping("/sms")
     @ApiOperation("获取手机验证码")
-    @ApiImplicitParam(value = "手机号" ,name = "phone",required = true,dataType = "string",paramType = "query")
-    public void getSMSCode(@RequestParam("mobile") String phone) {
+    public void getSMSCode(@RequestParam("phone") String phone) {
         smsService.sendMsg(phone);
     }
 
 
     @ApiOperation("商户注册")
-    @PostMapping("/merchant/register")
+    @PostMapping("/merchants/register")
     @ApiImplicitParam(value = "商户注册信息" ,name = "merchantRegisterVO",required = true,paramType = "body")
     public MerchantRegisterVO registerMerchant(@RequestBody MerchantRegisterVO merchantRegisterVO){
         //校验验证码
-        smsService.CheckVerify(merchantRegisterVO.getVerifiyCode(),merchantRegisterVO.getVerifiykey());
+        smsService.checkVerifiyCode(merchantRegisterVO.getVerifiyCode(),merchantRegisterVO.getVerifiykey());
 
         MerchantDTO merchantDTO = MerchantRegisterConvert.INSTANCE.MRVO2DTO(merchantRegisterVO);
 

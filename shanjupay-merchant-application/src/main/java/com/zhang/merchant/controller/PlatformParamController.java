@@ -7,6 +7,8 @@ import com.shanjupay.transaction.api.PayChannelService;
 import com.shanjupay.transaction.api.dto.PayChannelParamDTO;
 import com.shanjupay.transaction.api.dto.PlatformChannelDTO;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
@@ -59,8 +61,19 @@ public class PlatformParamController {
         payChannelService.savePayChannelParam(payChannelParamDTO);
     }
 
-
-
+    @ApiOperation("获取指定应用指定服务类型下所包含的原始支付渠道参数列表")
+    @GetMapping(value = "/my/pay‐channel‐params/apps/{appId}/platform‐ channels/{platformChannel}")
+            public List<PayChannelParamDTO> queryPayChannelParam(@PathVariable String appId,
+            @PathVariable String platformChannel) {
+        return payChannelService.queryPayChannelParamByAppAndPlatform(appId, platformChannel);
+    }
+    @ApiOperation("获取指定应用指定服务类型下所包含的某个原始支付参数")
+    @GetMapping(value = "/my/pay‐channel‐params/apps/{appId}/platform‐ channels/{platformChannel}/pay‐channels/{payChannel}")
+            public PayChannelParamDTO queryPayChannelParam(@PathVariable String appId,
+            @PathVariable String platformChannel, @PathVariable String payChannel) {
+            return payChannelService.queryParamByAppPlatformAndPayChannel(appId, platformChannel,
+            payChannel);
+}
 
 
 

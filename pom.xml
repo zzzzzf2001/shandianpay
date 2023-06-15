@@ -13,6 +13,10 @@
         <module>shanjupay-merchant-application</module>
         <module>shanju-merchant</module>
         <module>shanjupay-transaction</module>
+        <module>shanjupay-gateway</module>
+        <module>shanjupay-uaa</module>
+        <module>shanjupay-user</module>
+
     </modules>
 
     <parent>

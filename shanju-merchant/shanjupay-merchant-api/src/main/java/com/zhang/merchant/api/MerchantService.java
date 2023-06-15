@@ -2,6 +2,8 @@ package com.zhang.merchant.api;
 
 import com.shanjupay.common.domain.BusinessException;
 import com.zhang.merchant.api.dto.MerchantDTO;
+import com.zhang.merchant.api.dto.StaffDTO;
+import com.zhang.merchant.api.dto.StoreDTO;
 
 /**
  * @author : 15754
@@ -25,10 +27,13 @@ public interface MerchantService  {
      */
      MerchantDTO createMerchant(MerchantDTO merchantDTO) throws BusinessException;
 
+    StoreDTO createStore(StoreDTO storeDTO) throws BusinessException;
 
-
+    StaffDTO createStaff(StaffDTO staffDTO) throws BusinessException;
 
     void applyMerchant(Long merchantId, MerchantDTO merchantDTO) throws BusinessException;
+
+    void bindStaffToStore(Long storeId, Long staffId) throws BusinessException;
 
 
 

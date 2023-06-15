@@ -53,6 +53,6 @@ public class MerchantDTO implements Serializable {
     @ApiModelProperty(value = "租户ID,关联统一用户")
     private Long tenantId;
 
-
-
+    @ApiModelProperty(value = "密码")
+    private String Password;
 }
